@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title" class="text-center">Aniket's Survey Form</h1>
+      <p class="text-center description" id="description">
+        Thank you for taking the time to fill this form
+      </p>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            name="name"
+            type="text"
+            id="name"
+            class="form-content"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            name="email"
+            type="email"
+            id="email"
+            class="form-content"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label"
+            >Age <span class="clue">(optional)</span></label
+          >
+          <input
+            name="age"
+            type="number"
+            id="number"
+            min="10"
+            max="99"
+            class="form-content"
+            placeholder="Age"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select name="role" id="dropdown" class="form-content" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full time Job</option>
+            <option value="learner">Full time Learner</option>
+            <option value="preferNO">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend *BRANDNAME* to a friend?</p>
+          <label
+            ><input
+              name="user-recommend"
+              type="radio"
+              value="definitely"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label
+            ><input
+              name="user-recommend"
+              type="radio"
+              value="maybe"
+              class="input-radio"
+            />Maybe</label
+          >
+          <label
+            ><input
+              name="user-recommend"
+              type="radio"
+              value="notsure"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+        <div class="form-group">
+          <p>What is your favorite feature of *BRANDNAME*?</p>
+          <select name="most-like" id="most-like" class="form-content" required>
+            <option disabled selected value>Select favorite feature</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="opensource">Open source</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>
+            What would you like to see improved?<span class="clue"
+              >(Check all that apply)</span
+            >
+          </p>
+          <label
+            ><input
+              name="prefer"
+              type="checkbox"
+              value="front-end-projects"
+              class="input-checkbox"
+            />Front-end Projects</label
+          >
+          <label
+            ><input
+              name="prefer"
+              type="checkbox"
+              value="back-end-projects"
+              class="input-checkbox"
+            />Back-end Projects</label
+          >
+          <label
+            ><input
+              name="prefer"
+              type="checkbox"
+              value="data-visualization"
+              class="input-checkbox"
+            />Data-visualization</label
+          >
+          <label
+            ><input
+              name="prefer"
+              type="checkbox"
+              value="challenges"
+              class="input-checkbox"
+            />Challenges</label
+          >
+          <label
+            ><input
+              name="prefer"
+              type="checkbox"
+              value="open-source-community"
+              class="input-checkbox"
+            />Open Source Community</label
+          >
+          <label
+            ><input
+              name="prefer"
+              type="checkbox"
+              value="gitter-help-rooms"
+              class="input-checkbox"
+            />Gitter help rooms</label
+          >
+          <label
+            ><input
+              name="prefer"
+              type="checkbox"
+              value="videos"
+              class="input-checkbox"
+            />Videos</label
+          >
+          <label
+            ><input
+              name="prefer"
+              type="checkbox"
+              value="city-meetups"
+              class="input-checkbox"
+            />City Meetups</label
+          >
+          <label
+            ><input
+              name="prefer"
+              type="checkbox"
+              value="wiki"
+              class="input-checkbox"
+            />Wiki</label
+          >
+          <label
+            ><input
+              name="prefer"
+              type="checkbox"
+              value="forum"
+              class="input-checkbox"
+            />Forum</label
+          >
+          <label
+            ><input
+              name="prefer"
+              type="checkbox"
+              value="additional-courses"
+              class="input-checkbox"
+            />Additional Courses</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            name="comment"
+            class="input-textarea"
+            id="comments"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
